@@ -43,7 +43,7 @@
         "key": "ctrl+i s",
         "command": "workbench.action.findInFiles"
     },
-    
+
     //
     // Search within the current file
     //
@@ -57,7 +57,6 @@
     // Set input focus to the source code management pane
     //
     {
-        
         "key": "ctrl+i g",
         "command": "workbench.view.scm"
     },
@@ -85,7 +84,7 @@
         "key": "ctrl+i t",
         "command": "workbench.action.terminal.toggleTerminal"
     },
-   
+
 
     ////////////////////////////////////////////////////////////////////////////
     // Cursor Movement (ctrl+m)
@@ -301,6 +300,10 @@
     //
     {
         "key": "ctrl+o",
+        "command": "-workbench.action.files.openFile"
+    },
+    {
+        "key": "ctrl+o",
         "command": "cancelSelection",
         "when": "editorTextFocus && editorHasSelection"
     },
@@ -308,11 +311,6 @@
     //
     // Select next find match
     //
-    {
-        "key": "ctrl+d",
-        "command": "-editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
-    },
     {
         "key": "ctrl+shift+g",
         "command": "editor.action.addSelectionToNextFindMatch",
@@ -355,6 +353,11 @@
     //
     {
         "key": "alt+w",
+        "command": "-toggleFindWholeWord",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+w",
         "command": "editor.action.clipboardCopyAction",
         "when": "editorFocus"
     },
@@ -393,25 +396,20 @@
         "key": "ctrl+x 0",
         "command": "workbench.action.closeActiveEditor"
     },
-    {
-        "key": "alt+w",
-        "command": "-toggleFindWholeWord",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+o",
-        "command": "-workbench.action.files.openFile"
-    },
 
     ////////////////////////////////////////////////////////////////////////////
     // Text Editing
     ////////////////////////////////////////////////////////////////////////////
     {
         "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
         "command": "deleteRight",
         "when": "textInputFocus && !editorReadonly"
     },
-    
 
     ////////////////////////////////////////////////////////////////////////////
     // Folding
