@@ -1,0 +1,384 @@
+[
+    ////////////////////////////////////////////////////////////////////////////
+    // IDE General
+    ////////////////////////////////////////////////////////////////////////////
+    {
+        "key": "ctrl+shift+s",
+        "command": "workbench.action.files.saveAll"
+    },
+    ////////////////////////////////////////////////////////////////////////////
+    // IDE Navigation (ctrl+i)
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // Set input focus to the project Explorer
+    //
+    {
+        "key": "ctrl+i e",
+        "command": "workbench.view.explorer"
+    },
+    //
+    // Open a project file
+    //
+    {
+        "key": "ctrl+i f",
+        "command": "workbench.action.quickOpen"
+    },
+    //
+    // Set input focus to project-wide search
+    //
+    {
+        "key": "ctrl+i s",
+        "command": "workbench.action.findInFiles"
+    },
+    //
+    // Search within the current file
+    //
+    {
+        "key": "ctrl+i ctrl+i",
+        "command": "actions.find",
+        "when": "editorTextFocus"
+    },
+    //
+    // Set input focus to the source code management pane
+    //
+    {
+        "key": "ctrl+i g",
+        "command": "workbench.view.scm"
+    },
+    //
+    // Set input focus to the debug pane
+    //
+    {
+        "key": "ctrl+i d",
+        "command": "workbench.view.debug"
+    },
+    //
+    // Set input focus to the extensions pane
+    //
+    {
+        "key": "ctrl+i x",
+        "command": "workbench.view.extensions"
+    },
+    //
+    // Show/hide the integrated terminal pane
+    //
+    {
+        "key": "ctrl+i t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    ////////////////////////////////////////////////////////////////////////////
+    // Cursor Movement (ctrl+m)
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // Go to beginning of line
+    //
+    {
+        "key": "ctrl+a",
+        "command": "-cursorLineStart",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorHome",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorHomeSelect",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-cursorLineEnd",
+        "when": "textInputFocus"
+    },
+    // 
+    // Go to end of line
+    //
+    {
+        "key": "ctrl+e",
+        "command": "cursorEnd",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "cursorEndSelect",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    //
+    // Go to previous line (up)
+    //
+    {
+        "key": "ctrl+p",
+        "command": "cursorUp",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    //
+    // Go to top of file
+    //
+    {
+        "key": "shift+alt+,",
+        "command": "cursorTop",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+    {
+        "key": "shift+alt+,",
+        "command": "cursorTopSelect",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    //
+    // Go to bottom of file
+    //
+    {
+        "key": "shift+alt+.",
+        "command": "cursorBottom",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+    {
+        "key": "shift+alt+.",
+        "command": "cursorBottomSelect",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    //
+    // Go to next line (down)
+    //
+    {
+        "key": "ctrl+n",
+        "command": "cursorDown",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    //
+    // Go forwarnd one character
+    //
+    {
+        "key": "ctrl+f",
+        "command": "cursorRight",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "cursorRightSelect",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    //
+    // Go backward one character
+    //
+    {
+        "key": "ctrl+b",
+        "command": "cursorLeft",
+        "when": "editorTextFocus && !editorHasSelection"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "cursorLeftSelect",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    //
+    // AceJump
+    //
+    {
+        "key": "ctrl+m a",
+        "command": "extension.aceJump.multiChar",
+        "when": "editorTextFocus"
+    },
+    //
+    // Move to previous cursor location
+    //
+    {
+        "key": "ctrl+m b",
+        "command": "workbench.action.navigateBack",
+        "when": "editorTextFocus"
+    },
+    //
+    // Move forward in cursor position stack
+    //
+    {
+        "key": "ctrl+m f",
+        "command": "workbench.action.navigateForward",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+m l",
+        "command": "workbench.action.gotoLine",
+        "when": "editorTextFocus"
+    },
+    ////////////////////////////////////////////////////////////////////////////
+    // Movement within lists
+    ////////////////////////////////////////////////////////////////////////////
+    // Suggest widget
+    {
+        "key": "ctrl+p",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    // Quick open
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    
+    ////////////////////////////////////////////////////////////////////////////
+    // Selection (ctrl+g)
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // Shrink selection
+    //
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    //
+    // Expand selection
+    //
+    {
+        "key": "ctrl+=",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    
+    //
+    // Cancel selection
+    //
+    {
+        "key": "ctrl+o",
+        "command": "-lineBreakInsert",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "cancelSelection",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm"
+    },
+    //
+    // Select next find match
+    //
+    {
+        "key": "ctrl+shift+g",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    // Start sticky selection
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+g space",
+        "command": "cursorRightSelect",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    
+    ////////////////////////////////////////////////////////////////////////////
+    // Cut/Copy/Paste
+    ////////////////////////////////////////////////////////////////////////////
+
+    //
+    // Cutting
+    //
+    {
+        "key": "ctrl+k",
+        "command": "-deleteAllRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        // When ctrl+k and no selection, cut to ring to the end of the line.
+        "key": "ctrl+k",
+        "command": "macros.cutToEndOfLineToRing",
+        "when": "editorTextFocus && !editorReadonly && !editorHasSelection"
+    },
+    {
+        // When ctrl+k and selection exists, just cut the selection to ring.
+        "key": "ctrl+k",
+        "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus && !editorReadonly && editorHasSelection"
+    },
+    //
+    // Copying
+    //
+    {
+        "key": "alt+w",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "editorFocus"
+    },
+    //
+    // Pasting
+    //
+    {
+        "key": "ctrl+y",
+        "command": "editor.action.clipboardPasteAction"
+        // No "when" because I want it to work everywhere
+    },
+    ////////////////////////////////////////////////////////////////////////////
+    // Editor Panes
+    ////////////////////////////////////////////////////////////////////////////
+    {
+        "key": "ctrl+x 3",
+        "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "ctrl+x 2",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "ctrl+x o",
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "ctrl+x 0",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    
+    ////////////////////////////////////////////////////////////////////////////
+    // Text Editing
+    ////////////////////////////////////////////////////////////////////////////
+    // Commented out because this is the default on Mac
+    // {
+    //     "key": "ctrl+d",
+    //     "command": "deleteRight",
+    //     "when": "textInputFocus && !editorReadonly"
+    // },
+    ////////////////////////////////////////////////////////////////////////////
+    // Folding
+    ////////////////////////////////////////////////////////////////////////////
+    // Toggle folding
+    {
+        "key": "ctrl+; f",
+        "command": "editor.toggleFold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    // Show definition in a popup.
+    {
+        "key": "ctrl+; d",
+        "command": "editor.action.showDefinitionPreviewHover"
+    }
+]
