@@ -1,0 +1,23 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 12,
+    "window.restoreWindows": "none",
+    "window.zoomLevel": -0.6,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "-i",
+        "-l"
+    ],
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.fontSize": 11,
+    "macros": {
+        "cutToEndOfLineToRing": [
+            "cursorEndSelect",
+            "editor.action.clipboardCutAction"
+        ]
+    },
+    "javascript.format.semicolons": "insert",
+    "javascript.preferences.quoteStyle": "double"
+}
