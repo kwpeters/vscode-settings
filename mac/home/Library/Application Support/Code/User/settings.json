@@ -19,5 +19,7 @@
         ]
     },
     "javascript.format.semicolons": "insert",
-    "javascript.preferences.quoteStyle": "double"
+    "javascript.preferences.quoteStyle": "double",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorWidth": 4
 }
