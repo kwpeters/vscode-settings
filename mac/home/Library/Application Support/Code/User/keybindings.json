@@ -6,9 +6,11 @@
         "key": "ctrl+shift+s",
         "command": "workbench.action.files.saveAll"
     },
+
     ////////////////////////////////////////////////////////////////////////////
     // IDE Navigation (ctrl+i)
     ////////////////////////////////////////////////////////////////////////////
+
     //
     // Set input focus to the project Explorer
     //
@@ -16,6 +18,7 @@
         "key": "ctrl+i e",
         "command": "workbench.view.explorer"
     },
+
     //
     // Open a project file
     //
@@ -23,6 +26,13 @@
         "key": "ctrl+i f",
         "command": "workbench.action.quickOpen"
     },
+
+    // Find symbol in project
+    {
+        "key": "ctrl+i y",
+        "command": "workbench.action.showAllSymbols"
+    },
+
     //
     // Set input focus to project-wide search
     //
@@ -30,6 +40,7 @@
         "key": "ctrl+i s",
         "command": "workbench.action.findInFiles"
     },
+
     //
     // Search within the current file
     //
@@ -38,6 +49,7 @@
         "command": "actions.find",
         "when": "editorTextFocus"
     },
+
     //
     // Set input focus to the source code management pane
     //
@@ -45,6 +57,7 @@
         "key": "ctrl+i g",
         "command": "workbench.view.scm"
     },
+
     //
     // Set input focus to the debug pane
     //
@@ -52,6 +65,7 @@
         "key": "ctrl+i d",
         "command": "workbench.view.debug"
     },
+
     //
     // Set input focus to the extensions pane
     //
@@ -59,6 +73,7 @@
         "key": "ctrl+i x",
         "command": "workbench.view.extensions"
     },
+
     //
     // Show/hide the integrated terminal pane
     //
@@ -66,9 +81,12 @@
         "key": "ctrl+i t",
         "command": "workbench.action.terminal.toggleTerminal"
     },
+
+
     ////////////////////////////////////////////////////////////////////////////
     // Cursor Movement (ctrl+m)
     ////////////////////////////////////////////////////////////////////////////
+
     //
     // Go to beginning of line
     //
@@ -105,6 +123,7 @@
         "command": "cursorEndSelect",
         "when": "editorTextFocus && editorHasSelection"
     },
+
     //
     // Go to previous line (up)
     //
@@ -118,6 +137,7 @@
         "command": "cursorUpSelect",
         "when": "editorTextFocus && editorHasSelection"
     },
+
     //
     // Go to top of file
     //
@@ -131,6 +151,7 @@
         "command": "cursorTopSelect",
         "when": "editorTextFocus && editorHasSelection"
     },
+
     //
     // Go to bottom of file
     //
@@ -144,6 +165,7 @@
         "command": "cursorBottomSelect",
         "when": "editorTextFocus && editorHasSelection"
     },
+
     //
     // Go to next line (down)
     //
@@ -157,6 +179,7 @@
         "command": "cursorDownSelect",
         "when": "editorTextFocus && editorHasSelection"
     },
+
     //
     // Go forwarnd one character
     //
@@ -170,6 +193,7 @@
         "command": "cursorRightSelect",
         "when": "editorTextFocus && editorHasSelection"
     },
+
     //
     // Go backward one character
     //
@@ -183,6 +207,7 @@
         "command": "cursorLeftSelect",
         "when": "editorTextFocus && editorHasSelection"
     },
+
     //
     // AceJump
     //
@@ -191,6 +216,7 @@
         "command": "extension.aceJump.multiChar",
         "when": "editorTextFocus"
     },
+
     //
     // Move to previous cursor location
     //
@@ -199,6 +225,7 @@
         "command": "workbench.action.navigateBack",
         "when": "editorTextFocus"
     },
+
     //
     // Move forward in cursor position stack
     //
@@ -207,26 +234,30 @@
         "command": "workbench.action.navigateForward",
         "when": "editorTextFocus"
     },
+
     {
         "key": "ctrl+m l",
         "command": "workbench.action.gotoLine",
         "when": "editorTextFocus"
     },
 
+
     ////////////////////////////////////////////////////////////////////////////
     // Movement - Code related
     ////////////////////////////////////////////////////////////////////////////
     
-    // Move to matching brace.
+    // Move to matching brace
     {
         "key": "ctrl+m ]",
         "command": "editor.action.jumpToBracket",
         "when": "editorTextFocus"
     },
 
+
     ////////////////////////////////////////////////////////////////////////////
     // Movement within lists
     ////////////////////////////////////////////////////////////////////////////
+
     // Suggest widget
     {
         "key": "ctrl+p",
@@ -238,6 +269,7 @@
         "command": "selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
+
     // Quick open
     {
         "key": "ctrl+p",
@@ -250,6 +282,7 @@
         "when": "inQuickOpen"
     },
     
+
     ////////////////////////////////////////////////////////////////////////////
     // Selection (ctrl+g)
     ////////////////////////////////////////////////////////////////////////////
@@ -265,6 +298,7 @@
         "command": "editor.action.smartSelect.shrink",
         "when": "editorTextFocus"
     },
+
     //
     // Expand selection
     //
@@ -299,6 +333,7 @@
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
     },
+
     // Start sticky selection
     {
         "key": "ctrl+g",
@@ -334,6 +369,7 @@
         "command": "editor.action.clipboardCutAction",
         "when": "editorTextFocus && !editorReadonly && editorHasSelection"
     },
+
     //
     // Copying
     //
@@ -342,6 +378,7 @@
         "command": "editor.action.clipboardCopyAction",
         "when": "editorFocus"
     },
+
     //
     // Pasting
     //
@@ -350,9 +387,11 @@
         "command": "editor.action.clipboardPasteAction"
         // No "when" because I want it to work everywhere
     },
+
     ////////////////////////////////////////////////////////////////////////////
     // Editor Panes
     ////////////////////////////////////////////////////////////////////////////
+    
     {
         "key": "ctrl+x 3",
         "command": "workbench.action.splitEditorRight"
@@ -382,12 +421,14 @@
     ////////////////////////////////////////////////////////////////////////////
     // Folding
     ////////////////////////////////////////////////////////////////////////////
+    
     // Toggle folding
     {
         "key": "ctrl+; f",
         "command": "editor.toggleFold",
         "when": "editorTextFocus && foldingEnabled"
     },
+    
     // Show definition in a popup.
     {
         "key": "ctrl+; d",

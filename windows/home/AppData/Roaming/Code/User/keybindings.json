@@ -36,6 +36,12 @@
         "command": "workbench.action.quickOpen"
     },
 
+    // Find symbol in project
+    {
+        "key": "ctrl+i y",
+        "command": "workbench.action.showAllSymbols"
+    },
+
     //
     // Set input focus to project-wide search
     //
