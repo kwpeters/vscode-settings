@@ -1,6 +1,5 @@
 {
     "files.autoSave": "onFocusChange",
-    "editor.fontSize": 12,
     "window.restoreWindows": "none",
     "window.zoomLevel": -0.6,
     "editor.formatOnPaste": true,
@@ -21,5 +20,6 @@
     "javascript.format.semicolons": "insert",
     "javascript.preferences.quoteStyle": "double",
     "editor.cursorSmoothCaretAnimation": true,
-    "editor.cursorWidth": 4
+    "editor.cursorWidth": 4,
+    "workbench.tree.indent": 20
 }
