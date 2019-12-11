@@ -433,5 +433,10 @@
     {
         "key": "ctrl+; d",
         "command": "editor.action.showDefinitionPreviewHover"
+    },
+    {
+        "key": "ctrl+; a",
+        "command": "wwm.aligncode",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]

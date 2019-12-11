@@ -21,5 +21,25 @@
     "javascript.preferences.quoteStyle": "double",
     "editor.cursorSmoothCaretAnimation": true,
     "editor.cursorWidth": 4,
-    "workbench.tree.indent": 20
+    "workbench.tree.indent": 20,
+
+    ////////////////////////////////////////////////////////////////////////////////
+    // Better Align extension configuration
+    ////////////////////////////////////////////////////////////////////////////////
+    "alignment.surroundSpace": {
+        "colon": [
+            -1,  // Don' align colons
+            1
+        ],
+        "assignment": [
+            1,
+            1
+        ],
+        "arrow": [
+            1,
+            1
+        ],
+        "comment": 2 // Special how much space to add between the trailing comment and the code.
+                     // If this value is negative, it means don't align the trailing comment.
+    }
 }
