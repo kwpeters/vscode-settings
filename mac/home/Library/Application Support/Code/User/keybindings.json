@@ -281,11 +281,31 @@
         "command": "workbench.action.quickOpenSelectNext",
         "when": "inQuickOpen"
     },
+
     
+    ////////////////////////////////////////////////////////////////////////////
+    // Scrolling
+    ////////////////////////////////////////////////////////////////////////////
+    
+    // scroll up
+    {
+        "key": "ctrl+shift+p",
+        "command": "scrollLineUp",
+        "when": "textInputFocus"
+    },
+
+    // scroll down
+    {
+        "key": "ctrl+shift+n",
+        "command": "scrollLineDown",
+        "when": "textInputFocus"
+    },
+
 
     ////////////////////////////////////////////////////////////////////////////
     // Selection (ctrl+g)
     ////////////////////////////////////////////////////////////////////////////
+    
     //
     // Shrink selection
     //
