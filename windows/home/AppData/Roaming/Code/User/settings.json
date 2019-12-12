@@ -19,7 +19,6 @@
     },
     "javascript.format.semicolons": "insert",
     "javascript.preferences.quoteStyle": "double",
-    "editor.cursorSmoothCaretAnimation": true,
     "editor.cursorWidth": 4,
     "workbench.tree.indent": 20,
 
@@ -41,5 +40,9 @@
         ],
         "comment": 2 // Special how much space to add between the trailing comment and the code.
                      // If this value is negative, it means don't align the trailing comment.
-    }
+    },
+    "editor.stablePeek": true,
+    "aceJump.finder.onlyInitialLetter": false,
+    "diffEditor.maxComputationTime": 15000,
+    "files.trimTrailingWhitespace": true
 }
