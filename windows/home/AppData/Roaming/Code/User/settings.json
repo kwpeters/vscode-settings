@@ -44,5 +44,6 @@
     "editor.stablePeek": true,
     "aceJump.finder.onlyInitialLetter": false,
     "diffEditor.maxComputationTime": 15000,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "workbench.editor.enablePreview": false
 }
