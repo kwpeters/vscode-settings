@@ -27,6 +27,20 @@
         "command": "workbench.action.quickOpen"
     },
 
+    //
+    // Open a *related* project file
+    //
+    {
+        "key": "alt+r",
+        "command": "-findrelated.show",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+i shift+f",
+        "command": "findrelated.show",
+        "when": "editorFocus"
+    },
+
     // Find symbol in project
     {
         "key": "ctrl+i y",
@@ -110,7 +124,7 @@
         "command": "-cursorLineEnd",
         "when": "textInputFocus"
     },
-    // 
+    //
     // Go to end of line
     //
     {
@@ -245,7 +259,7 @@
     ////////////////////////////////////////////////////////////////////////////
     // Movement - Code related
     ////////////////////////////////////////////////////////////////////////////
-    
+
     // Move to matching brace
     {
         "key": "ctrl+m ]",
@@ -282,30 +296,11 @@
         "when": "inQuickOpen"
     },
 
-    
-    ////////////////////////////////////////////////////////////////////////////
-    // Scrolling
-    ////////////////////////////////////////////////////////////////////////////
-    
-    // scroll up
-    {
-        "key": "ctrl+shift+p",
-        "command": "scrollLineUp",
-        "when": "textInputFocus"
-    },
-
-    // scroll down
-    {
-        "key": "ctrl+shift+n",
-        "command": "scrollLineDown",
-        "when": "textInputFocus"
-    },
-
 
     ////////////////////////////////////////////////////////////////////////////
     // Selection (ctrl+g)
     ////////////////////////////////////////////////////////////////////////////
-    
+
     //
     // Shrink selection
     //
@@ -327,7 +322,7 @@
         "command": "editor.action.smartSelect.expand",
         "when": "editorTextFocus"
     },
-    
+
     //
     // Cancel selection
     //
@@ -364,7 +359,7 @@
         "command": "cursorRightSelect",
         "when": "editorTextFocus && !editorReadonly"
     },
-    
+
     ////////////////////////////////////////////////////////////////////////////
     // Cut/Copy/Paste
     ////////////////////////////////////////////////////////////////////////////
@@ -411,7 +406,7 @@
     ////////////////////////////////////////////////////////////////////////////
     // Editor Panes
     ////////////////////////////////////////////////////////////////////////////
-    
+
     {
         "key": "ctrl+x 3",
         "command": "workbench.action.splitEditorRight"
@@ -428,7 +423,7 @@
         "key": "ctrl+x 0",
         "command": "workbench.action.closeActiveEditor"
     },
-    
+
     ////////////////////////////////////////////////////////////////////////////
     // Text Editing
     ////////////////////////////////////////////////////////////////////////////
@@ -441,14 +436,14 @@
     ////////////////////////////////////////////////////////////////////////////
     // Folding
     ////////////////////////////////////////////////////////////////////////////
-    
+
     // Toggle folding
     {
         "key": "ctrl+; f",
         "command": "editor.toggleFold",
         "when": "editorTextFocus && foldingEnabled"
     },
-    
+
     // Show definition in a popup.
     {
         "key": "ctrl+; d",

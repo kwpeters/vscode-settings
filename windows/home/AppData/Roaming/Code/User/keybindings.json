@@ -36,6 +36,20 @@
         "command": "workbench.action.quickOpen"
     },
 
+    //
+    // Open a *related* project file
+    //
+    {
+        "key": "alt+r",
+        "command": "-findrelated.show",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+i shift+f",
+        "command": "findrelated.show",
+        "when": "editorFocus"
+    },
+
     // Find symbol in project
     {
         "key": "ctrl+i y",
@@ -110,7 +124,7 @@
         "when": "editorTextFocus && editorHasSelection"
     },
 
-    // 
+    //
     // Go to end of line
     //
     {
@@ -253,7 +267,7 @@
     ////////////////////////////////////////////////////////////////////////////
     // Movement - Code related
     ////////////////////////////////////////////////////////////////////////////
-    
+
     // Move to matching brace
     {
         "key": "ctrl+m ]",
@@ -290,30 +304,11 @@
         "when": "inQuickOpen"
     },
 
-    
-    ////////////////////////////////////////////////////////////////////////////
-    // Scrolling
-    ////////////////////////////////////////////////////////////////////////////
-
-    // scroll up
-    {
-        "key": "ctrl+shift+p",
-        "command": "scrollLineUp",
-        "when": "textInputFocus"
-    },
-
-    // scroll down
-    {
-        "key": "ctrl+shift+n",
-        "command": "scrollLineDown",
-        "when": "textInputFocus"
-    },
-    
 
     ////////////////////////////////////////////////////////////////////////////
     // Selection (ctrl+g)
     ////////////////////////////////////////////////////////////////////////////
-    
+
     //
     // Shrink selection
     //
@@ -384,7 +379,7 @@
         "command": "editor.action.clipboardCutAction",
         "when": "editorTextFocus && !editorReadonly && editorHasSelection"
     },
-    
+
     //
     // Copying
     //
@@ -416,7 +411,7 @@
     ////////////////////////////////////////////////////////////////////////////
     // Editor Panes
     ////////////////////////////////////////////////////////////////////////////
-    
+
     {
         "key": "ctrl+x 3",
         "command": "workbench.action.splitEditorRight"
