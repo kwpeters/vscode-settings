@@ -375,7 +375,7 @@
     {
         // When ctrl+k and no selection, cut to ring to the end of the line.
         "key": "ctrl+k",
-        "command": "macros.cutToEndOfLineToRing",
+        "command": "macros.cutToEndOfLine",
         "when": "editorTextFocus && !editorReadonly && !editorHasSelection"
     },
     {
@@ -433,6 +433,14 @@
     //     "command": "deleteRight",
     //     "when": "textInputFocus && !editorReadonly"
     // },
+
+    // Append semicolon
+    {
+        "key": "ctrl+; ;",
+        "command": "macros.appendSemicolon",
+        "when": "textInputFocus && !editorReadonly"
+    },
+
     ////////////////////////////////////////////////////////////////////////////
     // Folding
     ////////////////////////////////////////////////////////////////////////////

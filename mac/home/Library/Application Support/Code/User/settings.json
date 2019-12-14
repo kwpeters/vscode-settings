@@ -16,12 +16,6 @@
     ],
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.fontSize": 11,
-    "macros": {
-        "cutToEndOfLineToRing": [
-            "cursorEndSelect",
-            "editor.action.clipboardCutAction"
-        ]
-    },
     "javascript.format.semicolons": "insert",
     "javascript.preferences.quoteStyle": "double",
     "editor.cursorWidth": 4,
@@ -29,6 +23,30 @@
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#333333"
     },
+
+
+    ////////////////////////////////////////////////////////////////////////////////
+    // Macros
+    ////////////////////////////////////////////////////////////////////////////////
+
+    "macros": {
+        "cutToEndOfLine": [
+            "cursorEndSelect",
+            "editor.action.clipboardCutAction"
+        ],
+        "appendSemicolon": [
+            "workbench.action.splitEditorDown",
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ";"
+                }
+            },
+            "workbench.action.closeActiveEditor"
+        ]
+    },
+
 
     ////////////////////////////////////////////////////////////////////////////////
     // Better Align extension configuration
