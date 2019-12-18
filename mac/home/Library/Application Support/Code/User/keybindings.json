@@ -98,6 +98,23 @@
 
 
     ////////////////////////////////////////////////////////////////////////////
+    // IDE - Misc
+    ////////////////////////////////////////////////////////////////////////////
+
+    // Increase font size
+    {
+        "key": "ctrl+x ctrl+=",
+        "command": "editor.action.fontZoomIn"
+    },
+
+    // Decrease font size
+    {
+        "key": "ctrl+x ctrl+-",
+        "command": "editor.action.fontZoomOut"
+    },
+
+
+    ////////////////////////////////////////////////////////////////////////////
     // Cursor Movement (ctrl+m)
     ////////////////////////////////////////////////////////////////////////////
 
@@ -296,6 +313,19 @@
         "when": "inQuickOpen"
     },
 
+    ////////////////////////////////////////////////////////////////////////////
+    // Scrolling
+    ////////////////////////////////////////////////////////////////////////////
+    {
+        "key": "ctrl+up",
+        "command": "scrollLineUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "scrollLineDown",
+        "when": "editorTextFocus"
+    },
 
     ////////////////////////////////////////////////////////////////////////////
     // Selection (ctrl+g)
@@ -337,6 +367,11 @@
         "when": "editorTextFocus && editorHasSelection"
     },
     {
+        "key": "ctrl+o",
+        "command": "hideSuggestWidget",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
         "key": "ctrl+shift+g",
         "command": "-workbench.view.scm"
     },
@@ -351,11 +386,7 @@
 
     // Start sticky selection
     {
-        "key": "ctrl+g",
-        "command": "-workbench.action.gotoLine"
-    },
-    {
-        "key": "ctrl+g space",
+        "key": "ctrl+; s",
         "command": "cursorRightSelect",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -460,6 +491,11 @@
     {
         "key": "ctrl+; a",
         "command": "wwm.aligncode",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+; 2",
+        "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     }
 ]

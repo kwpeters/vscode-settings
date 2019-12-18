@@ -68,11 +68,10 @@
                      // If this value is negative, it means don't align the trailing comment.
     },
     "editor.stablePeek": true,
-    "aceJump.finder.onlyInitialLetter": false,
+    "aceJump.finder.onlyInitialLetter": true,
     "diffEditor.maxComputationTime": 15000,
     "files.trimTrailingWhitespace": true,
     "workbench.editor.enablePreview": false,
-    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
     "typescript.format.semicolons": "insert",
     "editor.fontSize": 12,
 
@@ -94,5 +93,9 @@
     ],
     "findrelated.applyRulesets": [
         "ts-kwp"
-    ]
+    ],
+    "aceJump.placeholder.fontSize": 12,
+    "problems.showCurrentInStatus": true,
+    "editor.foldingStrategy": "indentation",
+    "files.insertFinalNewline": true
 }

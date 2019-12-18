@@ -304,6 +304,19 @@
         "when": "inQuickOpen"
     },
 
+    ////////////////////////////////////////////////////////////////////////////
+    // Scrolling
+    ////////////////////////////////////////////////////////////////////////////
+    {
+        "key": "ctrl+up",
+        "command": "scrollLineUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "scrollLineDown",
+        "when": "editorTextFocus"
+    },
 
     ////////////////////////////////////////////////////////////////////////////
     // Selection (ctrl+g)
@@ -339,6 +352,11 @@
         "command": "cancelSelection",
         "when": "editorTextFocus && editorHasSelection"
     },
+    {
+        "key": "ctrl+o",
+        "command": "hideSuggestWidget",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
 
     //
     // Select next find match
@@ -351,11 +369,7 @@
 
     // Start sticky selection
     {
-        "key": "ctrl+g",
-        "command": "-workbench.action.gotoLine"
-    },
-    {
-        "key": "ctrl+g space",
+        "key": "ctrl+; s",
         "command": "cursorRightSelect",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -469,6 +483,11 @@
     {
         "key": "ctrl+; a",
         "command": "wwm.aligncode",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+; 2",
+        "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     }
 ]

@@ -1,7 +1,7 @@
 {
-	// Place your snippets for typescript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// Place your snippets for typescript here. Each snippet is defined under a snippet name and has a prefix, body and
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
 	// Example:
 	// "Print to console": {
@@ -16,7 +16,7 @@
 	"arrow": {
 		"prefix": "arrow",
 		"body": [
-			"(${1:parameters}) => {$0}"
+			"(${1}) => {$0}"
 		],
 		"description": "Inserts an arrow function"
 	},
@@ -46,7 +46,7 @@
 		"body": [
 			"/**",
 			" * ${0}",
-			" * @param paramName - Description",
+			" * @param param - Description",
 			" * @return Description",
 			" */"
 		],
@@ -64,15 +64,65 @@
 	"todo": {
 		"prefix": "todo",
 		"body": [
-			"// TODO: ${1:yadda, yadda, yadda}"
+			"// TODO: ${0}"
 		],
 		"description": "Inserts a TODO comment"
 	},
 	"must": {
 		"prefix": "must",
 		"body": [
-			"// MUST: ${1:yadda, yadda, yadda}"
+			"// MUST: ${0}"
 		],
 		"description": "Inserts a MUST comment"
+	},
+	"describe": {
+		"prefix": "desc",
+		"body": [
+			"describe(\"${1}\", () => {",
+			"    $0",
+			"});"
+		],
+		"description": "Jasmine describe()"
+	},
+	"it": {
+		"prefix": "it",
+		"body": [
+			"it(\"${1}\", ${2:async} () => {",
+			"    $0",
+			"});"
+		],
+		"description": "Jasmine it()"
+	},
+	"Jasmine expect()": {
+		"prefix": "exp",
+		"body": [
+			"expect(${1:expr}).${2:toEqual}($0);"
+		],
+		"description": "Jasmine expect()"
+	},
+	"region comment": {
+		"prefix": "region",
+		"body": [
+			"// #region",
+			"${0}",
+			"// #endregion"
+		],
+		"description": "region comment"
+	},
+	"separator comment": {
+		"prefix": "sep",
+		"body": [
+			"////////////////////////////////////////////////////////////////////////////////"
+		],
+		"description": "separator comment"
+	},
+	"then()": {
+		"prefix": "then",
+		"body": [
+			"",
+			".then(($0) => {",
+			"})"
+		],
+		"description": "then()"
 	}
 }
