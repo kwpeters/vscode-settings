@@ -20,7 +20,6 @@
         "-l"
     ],
     "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.fontSize": 11,
     "editor.cursorWidth": 4,
     "workbench.tree.indent": 20,
     "workbench.colorCustomizations": {
@@ -112,5 +111,6 @@
     "aceJump.placeholder.fontSize": 12,
     "problems.showCurrentInStatus": true,
     "editor.foldingStrategy": "indentation",
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace"
 }
