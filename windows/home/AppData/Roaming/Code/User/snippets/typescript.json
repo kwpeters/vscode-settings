@@ -120,8 +120,7 @@
 		"prefix": "then",
 		"body": [
 			"",
-			".then(($0) => {",
-			"})"
+			".then(($1) => {$0})"
 		],
 		"description": "then()"
 	}
