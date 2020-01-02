@@ -9,6 +9,7 @@
         100,
         120
     ],
+    "editor.matchBrackets": "near",
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "terminal.integrated.shellArgs.windows": [
         "-i",
