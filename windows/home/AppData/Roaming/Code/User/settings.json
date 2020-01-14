@@ -87,7 +87,7 @@
     "diffEditor.maxComputationTime": 15000,
     "files.trimTrailingWhitespace": true,
     "workbench.editor.enablePreview": false,
-    "editor.fontSize": 12,
+    "editor.fontSize": 13,
 
     ////////////////////////////////////////////////////////////////////////////
     // Find Related Extension
@@ -112,5 +112,7 @@
     "problems.showCurrentInStatus": true,
     "editor.foldingStrategy": "indentation",
     "files.insertFinalNewline": true,
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "explorer.confirmDelete": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false
 }
