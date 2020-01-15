@@ -483,8 +483,9 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "cmd+/",
-        "command": "extension.airlinerToggleComment"
+        "key": "ctrl+/",
+        "command": "extension.airlinerToggleComment",
+        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "ctrl+k",
