@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
     ////////////////////////////////////////////////////////////////////////////
     // IDE General
@@ -103,6 +102,23 @@
     {
         "key": "ctrl+i t",
         "command": "workbench.action.terminal.toggleTerminal"
+    },
+
+
+    ////////////////////////////////////////////////////////////////////////////
+    // IDE - Misc
+    ////////////////////////////////////////////////////////////////////////////
+
+    // Increase font size
+    {
+        "key": "ctrl+x ctrl+=",
+        "command": "editor.action.fontZoomIn"
+    },
+
+    // Decrease font size
+    {
+        "key": "ctrl+x ctrl+-",
+        "command": "editor.action.fontZoomOut"
     },
 
 
@@ -382,12 +398,6 @@
     // Cutting
     //
     {
-        // When ctrl+k and no selection, cut to ring to the end of the line.
-        "key": "ctrl+k",
-        "command": "macros.cutToEndOfLine",
-        "when": "editorTextFocus && !editorReadonly && !editorHasSelection"
-    },
-    {
         // When ctrl+k and selection exists, just cut the selection to ring.
         "key": "ctrl+k",
         "command": "editor.action.clipboardCutAction",
@@ -457,24 +467,6 @@
         "when": "textInputFocus && !editorReadonly"
     },
 
-    // Append semicolon
-    {
-        "key": "ctrl+; ;",
-        "command": "macros.appendSemicolon",
-        "when": "textInputFocus && !editorReadonly"
-    },
-
-    ////////////////////////////////////////////////////////////////////////////
-    // Folding
-    ////////////////////////////////////////////////////////////////////////////
-
-    // Toggle folding
-    {
-        "key": "ctrl+; f",
-        "command": "editor.toggleFold",
-        "when": "editorTextFocus && foldingEnabled"
-    },
-
     // Show definition in a popup.
     {
         "key": "ctrl+; d",
@@ -489,5 +481,30 @@
         "key": "ctrl+; 2",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+/",
+        "command": "extension.airlinerToggleComment"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "extension.airlinerCutToEol",
+        "when": "editorTextFocus && !editorHasSelection && !editorReadonly"
+    },
+    {
+        "key": "ctrl+; ;",
+        "command": "extension.airlinerAppendSemicolon"
+    },
+
+
+    ////////////////////////////////////////////////////////////////////////////
+    // Folding
+    ////////////////////////////////////////////////////////////////////////////
+
+    // Toggle folding
+    {
+        "key": "ctrl+; f",
+        "command": "editor.toggleFold",
+        "when": "editorTextFocus && foldingEnabled"
     }
 ]

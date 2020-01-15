@@ -1,7 +1,8 @@
 {
     "files.autoSave": "onFocusChange",
     "window.restoreWindows": "none",
-    "window.zoomLevel": -0.6,
+    "window.zoomLevel": -1,
+    "editor.detectIndentation": false,
     "editor.formatOnPaste": true,
     "editor.formatOnType": false,
     "editor.rulers": [
@@ -11,6 +12,13 @@
     ],
     "editor.matchBrackets": "near",
     "editor.autoIndent": "brackets",
+    "editor.foldingStrategy": "indentation",
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.cursorWidth": 4,
+
+    "explorer.confirmDelete": false,
+
     // 4.5 is recommended for baseline website accessibility
     "terminal.integrated.minimumContrastRatio": 4.5,
     "terminal.integrated.rendererType": "experimentalWebgl",
@@ -20,7 +28,6 @@
         "-l"
     ],
     "terminal.integrated.copyOnSelection": true,
-    "editor.cursorWidth": 4,
     "workbench.tree.indent": 20,
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#333333"
@@ -38,29 +45,6 @@
     // TypeScript
     ////////////////////////////////////////////////////////////////////////////////
     "typescript.format.semicolons": "insert",
-
-
-    ////////////////////////////////////////////////////////////////////////////////
-    // Macros
-    ////////////////////////////////////////////////////////////////////////////////
-
-    "macros": {
-        "cutToEndOfLine": [
-            "cursorEndSelect",
-            "editor.action.clipboardCutAction"
-        ],
-        "appendSemicolon": [
-            "workbench.action.splitEditorDown",
-            "cursorEnd",
-            {
-                "command": "type",
-                "args": {
-                    "text": ";"
-                }
-            },
-            "workbench.action.closeActiveEditor"
-        ]
-    },
 
 
     ////////////////////////////////////////////////////////////////////////////////
@@ -108,11 +92,7 @@
     "findrelated.applyRulesets": [
         "ts-kwp"
     ],
-    "aceJump.placeholder.fontSize": 12,
+    "aceJump.placeholder.fontSize": 14,
     "problems.showCurrentInStatus": true,
-    "editor.foldingStrategy": "indentation",
-    "files.insertFinalNewline": true,
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "explorer.confirmDelete": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false
+    "files.insertFinalNewline": true
 }
