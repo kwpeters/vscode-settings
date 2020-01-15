@@ -75,21 +75,17 @@
 		],
 		"description": "Inserts a MUST comment"
 	},
-	"describe": {
-		"prefix": "desc",
+	"Jasmine describe()": {
+		"prefix": "jasdesc",
 		"body": [
-			"describe(\"${1}\", () => {",
-			"    $0",
-			"});"
+			"describe(\"${1}\", () => {$0});"
 		],
 		"description": "Jasmine describe()"
 	},
-	"it": {
-		"prefix": "it",
+	"Jasmine it()": {
+		"prefix": "jasit",
 		"body": [
-			"it(\"${1}\", ${2:async }() => {",
-			"    $0",
-			"});"
+			"it(\"${1}\", ${2:async }() => {$0});"
 		],
 		"description": "Jasmine it()"
 	},
@@ -103,8 +99,7 @@
 	"region comment": {
 		"prefix": "region",
 		"body": [
-			"// #region",
-			"${0}",
+			"// #region ${0}",
 			"// #endregion"
 		],
 		"description": "region comment"
