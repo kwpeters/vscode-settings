@@ -254,6 +254,11 @@
         "command": "extension.aceJump.multiChar",
         "when": "editorTextFocus"
     },
+    {
+        "key": "cmd+m",
+        "command": "extension.aceJump.multiChar",
+        "when": "editorTextFocus"
+    },
 
     //
     // Move to previous cursor location

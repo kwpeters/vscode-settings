@@ -247,6 +247,11 @@
         "command": "extension.aceJump.multiChar",
         "when": "editorTextFocus"
     },
+    {
+        "key": "cmd+m",
+        "command": "extension.aceJump.multiChar",
+        "when": "editorTextFocus"
+    },
 
     //
     // Move to previous cursor location
@@ -481,7 +486,8 @@
     },
     {
         "key": "cmd+/",
-        "command": "extension.airlinerToggleComment"
+        "command": "extension.airlinerToggleComment",
+        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "ctrl+k",
