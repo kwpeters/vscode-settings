@@ -1,0 +1,19 @@
+{
+    "extensions": [
+        "airliner",
+        "alefragnani.numbered-bookmarks-6.2.1",
+        "dbaeumer.vscode-eslint-2.0.14",
+        "eamodio.find-related-0.9.0",
+        "formulahendry.auto-rename-tag-0.1.1",
+        "formulahendry.code-runner-0.9.15",
+        "jeff-hykin.macro-commander-1.2.8",
+        "lucax88x.codeacejumper-2.1.7",
+        "ms-azuretools.vscode-docker-0.9.0",
+        "ms-python.python-2020.1.58038",
+        "ms-vscode.vscode-typescript-tslint-plugin-1.2.3",
+        "omagerio.tabsort-1.1.1",
+        "ryu1kn.annotator-1.0.0",
+        "stkb.rewrap-1.9.1",
+        "wwm.better-align-1.1.6"
+    ]
+}
