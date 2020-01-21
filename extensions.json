@@ -3,6 +3,7 @@
         "airliner",
         "alefragnani.numbered-bookmarks-6.2.1",
         "dbaeumer.vscode-eslint-2.0.14",
+        "dbaeumer.vscode-eslint-2.0.15",
         "eamodio.find-related-0.9.0",
         "formulahendry.auto-rename-tag-0.1.1",
         "formulahendry.code-runner-0.9.15",
@@ -14,6 +15,7 @@
         "omagerio.tabsort-1.1.1",
         "ryu1kn.annotator-1.0.0",
         "stkb.rewrap-1.9.1",
+        "vscode-org-mode.org-mode-1.0.0",
         "wwm.better-align-1.1.6"
     ]
 }

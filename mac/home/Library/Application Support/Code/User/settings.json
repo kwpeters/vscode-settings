@@ -14,6 +14,7 @@
     "editor.autoIndent": "brackets",
     "editor.foldingStrategy": "indentation",
     "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.cursorWidth": 4,
 
