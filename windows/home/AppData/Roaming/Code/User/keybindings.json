@@ -261,6 +261,24 @@
     },
 
     //
+    // Scroll up
+    //
+    {
+        "key": "ctrl+shift+p",
+        "command": "scrollLineUp",
+        "when": "editorTextFocus"
+    },
+
+    //
+    // Scroll down
+    //
+    {
+        "key": "ctrl+shift+n",
+        "command": "scrollLineDown",
+        "when": "editorTextFocus"
+    },
+
+    //
     // Move to previous cursor location
     //
     {

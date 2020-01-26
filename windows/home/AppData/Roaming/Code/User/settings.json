@@ -95,5 +95,7 @@
     ],
     "aceJump.placeholder.fontSize": 14,
     "problems.showCurrentInStatus": true,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true
 }
