@@ -68,7 +68,7 @@
                      // If this value is negative, it means don't align the trailing comment.
     },
     "editor.stablePeek": true,
-    "aceJump.finder.onlyInitialLetter": true,
+    "aceJump.finder.onlyInitialLetter": false,
     "diffEditor.maxComputationTime": 15000,
     "files.trimTrailingWhitespace": true,
     "workbench.editor.enablePreview": false,
@@ -84,8 +84,28 @@
             "name": "ts-kwp",
             "rules": [
                 {
-                    "pattern": "(.*?)(\\.spec)?(\\.ts)",
-                    "locators": ["{$1.ts,$1.spec.ts,$1.html,$1.css}"]
+                    "pattern": "(.*?)(\\.spec\\.ts)",
+                    "locators": ["$1.ts", "$1.html", "$1.css", "$1.scss", "$1.less"]
+                },
+                {
+                    "pattern": "(.*?)(\\.ts)",
+                    "locators": ["$1.spec.ts", "$1.html", "$1.css", "$1.scss", "$1.less"]
+                },
+                {
+                    "pattern": "(.*?)(\\.html)",
+                    "locators": ["$1.ts", "$1.spec.ts", "$1.css", "$1.scss", "$1.less"]
+                },
+                {
+                    "pattern": "(.*?)(\\.css)",
+                    "locators": ["$1.ts", "$1.spec.ts", "$1.html"]
+                },
+                {
+                    "pattern": "(.*?)(\\.scss)",
+                    "locators": ["$1.ts", "$1.spec.ts", "$1.html"]
+                },
+                {
+                    "pattern": "(.*?)(\\.less)",
+                    "locators": ["$1.ts", "$1.spec.ts", "$1.html"]
                 }
             ]
         }
