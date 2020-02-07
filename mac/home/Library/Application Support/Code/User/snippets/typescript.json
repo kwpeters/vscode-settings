@@ -14,12 +14,12 @@
 	// }
 
 	"arrow": {
-		"prefix": "arrow",
-		"body": [
-			"(${1}) => {$0}"
-		],
-		"description": "Inserts an arrow function"
-	},
+        "prefix": "arrow",
+        "body": [
+            "${1:async }(${2}) => {$0}"
+        ],
+        "description": "Inserts an arrow function"
+    },
 	"clog": {
 		"prefix": "clog",
 		"body": [

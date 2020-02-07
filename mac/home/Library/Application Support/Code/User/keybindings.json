@@ -472,6 +472,19 @@
         "command": "workbench.action.closeActiveEditor"
     },
 
+    // Use ctrl+tab and ctrl+shift+tab to navigate across editors of all groups
+    // (instead of only within the active group as the default keybindings do).
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor",
+        "when": "!inEditorsPicker"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.quickOpenLeastRecentlyUsedEditor",
+        "when": "!inEditorsPicker"
+    },
+
     ////////////////////////////////////////////////////////////////////////////
     // Text Editing
     ////////////////////////////////////////////////////////////////////////////
