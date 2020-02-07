@@ -262,12 +262,12 @@
 
     //
     // Scroll up
-    //
-    {
-        "key": "ctrl+shift+p",
-        "command": "scrollLineUp",
-        "when": "editorTextFocus"
-    },
+    // TODO: Figure out how to make this not collide with "show all commands"
+    // {
+    //     "key": "ctrl+shift+p",
+    //     "command": "scrollLineUp",
+    //     "when": "editorTextFocus"
+    // },
 
     //
     // Scroll down
