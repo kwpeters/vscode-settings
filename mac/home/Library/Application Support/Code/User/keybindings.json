@@ -548,6 +548,7 @@
     },
     {
         "key": "backspace",
-        "command": "extension.airlinerHungryBackspace"
+        "command": "extension.airlinerHungryBackspace",
+        "when": "editorTextFocus && !editorHasSelection && !editorReadonly"
     }
 ]
