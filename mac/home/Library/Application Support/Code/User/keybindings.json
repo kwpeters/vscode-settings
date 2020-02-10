@@ -540,5 +540,14 @@
         "key": "ctrl+; f",
         "command": "editor.toggleFold",
         "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "backspace",
+        "command": "-deleteLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "backspace",
+        "command": "extension.airlinerHungryBackspace"
     }
 ]
