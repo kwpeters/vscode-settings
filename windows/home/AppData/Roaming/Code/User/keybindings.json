@@ -532,6 +532,13 @@
         "key": "ctrl+; ;",
         "command": "extension.airlinerAppendSemicolon"
     },
+    {
+        // Do not remove existing backspace keybinding, because we still want
+        // that to work when there is a selection.
+        "key": "backspace",
+        "command": "extension.airlinerHungryBackspace",
+        "when": "editorTextFocus && !editorHasSelection && !editorReadonly"
+    },
 
 
     ////////////////////////////////////////////////////////////////////////////
@@ -543,15 +550,5 @@
         "key": "ctrl+; f",
         "command": "editor.toggleFold",
         "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-        "key": "backspace",
-        "command": "-deleteLeft",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "backspace",
-        "command": "extension.airlinerHungryBackspace",
-        "when": "editorTextFocus && !editorHasSelection && !editorReadonly"
     }
 ]
