@@ -539,6 +539,13 @@
         "command": "extension.airlinerHungryBackspace",
         "when": "editorTextFocus && !editorHasSelection && !editorReadonly"
     },
+    {
+        // Do not remove existing ctrl+d keybinding, because we still want that
+        // to work when there is a selection.
+        "key": "ctrl+d",
+        "command": "extension.airlinerHungryDeleteRight",
+        "when": "editorTextFocus && !editorHasSelection && !editorReadonly"
+    },
 
 
     ////////////////////////////////////////////////////////////////////////////
