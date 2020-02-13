@@ -117,5 +117,8 @@
     "problems.showCurrentInStatus": true,
     "files.insertFinalNewline": true,
     "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
-    "typescript.format.placeOpenBraceOnNewLineForFunctions": true
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "files.exclude": {
+        "**/node_modules": true
+    }
 }

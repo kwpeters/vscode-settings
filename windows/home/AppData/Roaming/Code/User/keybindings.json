@@ -2,6 +2,7 @@
     ////////////////////////////////////////////////////////////////////////////
     // IDE General
     ////////////////////////////////////////////////////////////////////////////
+    // These keybindings need to be removed on Windows.
     {
         "key": "ctrl+k s",
         "command": "-workbench.action.files.saveAll"
@@ -129,6 +130,12 @@
     //
     // Go to beginning of line
     //
+    // This keybinding needs to be removed on Mac.
+    // {
+    //     "key": "ctrl+a",
+    //     "command": "-cursorLineStart",
+    //     "when": "textInputFocus"
+    // },
     {
         "key": "ctrl+a",
         "command": "cursorHome",
@@ -139,7 +146,12 @@
         "command": "cursorHomeSelect",
         "when": "editorTextFocus && editorHasSelection"
     },
-
+    // This keybinding needs to be removed on Mac.
+    // {
+    //     "key": "ctrl+e",
+    //     "command": "-cursorLineEnd",
+    //     "when": "textInputFocus"
+    // },
     //
     // Go to end of line
     //
@@ -213,6 +225,7 @@
     //
     // Go forwarnd one character
     //
+    // This keybinding needs to be removed on Windows.
     {
         "key": "ctrl+f",
         "command": "-actions.find",
@@ -231,6 +244,7 @@
     //
     // Go backward one character
     //
+    // This keybinding needs to be removed on Windows.
     {
         "key": "ctrl+b",
         "command": "-workbench.action.quickOpen"
@@ -364,6 +378,11 @@
     //
     // Shrink selection
     //
+    // This keybinding needs to be removed on Mac.
+    // {
+    //     "key": "ctrl+-",
+    //     "command": "-workbench.action.navigateBack"
+    // },
     {
         "key": "ctrl+-",
         "command": "editor.action.smartSelect.shrink",
@@ -382,6 +401,13 @@
     //
     // Cancel selection
     //
+    // This keybinding needs to be removed on Mac.
+    // {
+    //     "key": "ctrl+o",
+    //     "command": "-lineBreakInsert",
+    //     "when": "textInputFocus && !editorReadonly"
+    // },
+    // This keybinding needs to be removed on Windows.
     {
         "key": "ctrl+o",
         "command": "-workbench.action.files.openFile"
@@ -396,7 +422,11 @@
         "command": "hideSuggestWidget",
         "when": "suggestWidgetVisible && textInputFocus"
     },
-
+    // This keybinding needs to be removed on Mac.
+    // {
+    //     "key": "ctrl+shift+g",
+    //     "command": "-workbench.view.scm"
+    // },
     //
     // Select next find match
     //
@@ -420,6 +450,12 @@
     //
     // Cutting
     //
+    // This keybinding needs to be removed on Mac.
+    // {
+    //     "key": "ctrl+k",
+    //     "command": "-deleteAllRight",
+    //     "when": "textInputFocus && !editorReadonly"
+    // },
     {
         // When ctrl+k and selection exists, just cut the selection to ring.
         "key": "ctrl+k",
@@ -430,6 +466,7 @@
     //
     // Copying
     //
+    // This keybinding needs to be removed on Windows.
     {
         "key": "alt+w",
         "command": "-toggleFindWholeWord",
@@ -444,6 +481,7 @@
     //
     // Pasting
     //
+    // This keybinding needs to be removed on Windows.
     {
         "key": "ctrl+y",
         "command": "-redo",
@@ -461,19 +499,28 @@
 
     {
         "key": "ctrl+x 3",
-        "command": "workbench.action.splitEditorRight"
+        "command": "workbench.action.splitEditorRight",
+        "when": "editorFocus"
     },
     {
         "key": "ctrl+x 2",
-        "command": "workbench.action.splitEditorDown"
+        "command": "extension.airlinerSplitEditorDown",
+        "when": "editorFocus"
     },
     {
         "key": "ctrl+x o",
-        "command": "workbench.action.focusNextGroup"
+        "command": "workbench.action.focusNextGroup",
+        "when": "editorFocus"
     },
     {
         "key": "ctrl+x 0",
-        "command": "workbench.action.closeActiveEditor"
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+x t",
+        "command": "extension.airlinerSplitTop",
+        "when": "editorFocus"
     },
 
     // Use ctrl+tab and ctrl+shift+tab to navigate across editors of all groups
@@ -492,15 +539,18 @@
     ////////////////////////////////////////////////////////////////////////////
     // Text Editing
     ////////////////////////////////////////////////////////////////////////////
+    // This keybinding needs to be removed on Windows.
     {
         "key": "ctrl+d",
         "command": "-editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
     },
     {
+        // Do not remove existing ctrl+d keybinding, because we still want that
+        // to work when there is a selection.
         "key": "ctrl+d",
-        "command": "deleteRight",
-        "when": "textInputFocus && !editorReadonly"
+        "command": "extension.airlinerHungryDeleteRight",
+        "when": "editorTextFocus && !editorHasSelection && !editorReadonly"
     },
 
     // Show definition in a popup.
@@ -518,6 +568,12 @@
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
+    // This keybinding needs to be removed on Mac.
+    // {
+    //     "key": "cmd+/",
+    //     "command": "-editor.action.commentLine",
+    //     "when": "editorTextFocus && !editorReadonly"
+    // },
     {
         "key": "ctrl+/",
         "command": "extension.airlinerToggleComment",
@@ -537,13 +593,6 @@
         // that to work when there is a selection.
         "key": "backspace",
         "command": "extension.airlinerHungryBackspace",
-        "when": "editorTextFocus && !editorHasSelection && !editorReadonly"
-    },
-    {
-        // Do not remove existing ctrl+d keybinding, because we still want that
-        // to work when there is a selection.
-        "key": "ctrl+d",
-        "command": "extension.airlinerHungryDeleteRight",
         "when": "editorTextFocus && !editorHasSelection && !editorReadonly"
     },
 
