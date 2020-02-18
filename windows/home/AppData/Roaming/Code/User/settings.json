@@ -120,5 +120,14 @@
     "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
     "files.exclude": {
         "**/node_modules": true
-    }
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "cSpell.userWords": [
+        "ftlig",
+        "logix",
+        "promisify"
+    ]
 }
