@@ -134,6 +134,7 @@
         "typescript",
         "html"
     ],
+    "spellright.spellContext": "body comments body",  // Don't check "strings"
     "spellright.ignoreRegExpsByClass": {
         "markdown": [
             "/&amp;/g",
