@@ -141,7 +141,8 @@
             "/&nbsp;/g"
         ],
         "typescript": [
-            "/import\\s+.*;/g"
+            "/import\\s+.*;/g",
+            "/@\\w+/g",
         ],
         "html": [
             "/<script>[^]*?</script>/gm"
