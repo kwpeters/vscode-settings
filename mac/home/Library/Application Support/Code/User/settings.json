@@ -125,10 +125,13 @@
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
-    "cSpell.userWords": [
-        "ftlig",
-        "logix",
-        "promisify",
-        "testcafe"
+    "spellright.configurationScope": "user",
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "javascript",
+        "typescript",
+        "html"
     ]
 }
