@@ -133,7 +133,22 @@
         "javascript",
         "typescript",
         "html"
-    ]
+    ],
+    "spellright.ignoreRegExpsByClass": {
+        "markdown": [
+            "/&amp;/g",
+            "/&nbsp;/g"
+        ],
+        "typescript": [
+            "/import\\s+.*;/g"
+        ],
+        "html": [
+            "/<script>[^]*?</script>/gm"
+        ],
+        "latex": [
+            "/\\\\begin{minted}[^]*?\\\\end{minted}/gm"
+        ]
+    }
 
     //
     // Example of how to customize a color scheme.
