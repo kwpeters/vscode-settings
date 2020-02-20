@@ -41,17 +41,6 @@
 		],
 		"description": "Inserts an import statement"
 	},
-	"JSDoc for a function": {
-		"prefix": "jsdfunc",
-		"body": [
-			"/**",
-			" * ${0}",
-			" * @param param - Description",
-			" * @return Description",
-			" */"
-		],
-		"description": "JSDoc for a function"
-	},
 	"3 line comment": {
 		"prefix": "tlc",
 		"body": [
@@ -75,27 +64,6 @@
 		],
 		"description": "Inserts a MUST comment"
 	},
-	"Jasmine describe()": {
-		"prefix": "jasdesc",
-		"body": [
-			"describe(\"${1}\", () => {$0});"
-		],
-		"description": "Jasmine describe()"
-	},
-	"Jasmine it()": {
-		"prefix": "jasit",
-		"body": [
-			"it(\"${1}\", ${2:async }() => {$0});"
-		],
-		"description": "Jasmine it()"
-	},
-	"Jasmine expect()": {
-		"prefix": "exp",
-		"body": [
-			"expect(${1:expr}).${2:toEqual}($0);"
-		],
-		"description": "Jasmine expect()"
-	},
 	"region comment": {
 		"prefix": "region",
 		"body": [
@@ -118,5 +86,79 @@
 			".then(($1) => {$0})"
 		],
 		"description": "then()"
-	}
+	},
+
+    ////////////////////////////////////////////////////////////////////////////
+    // JSDoc
+    ////////////////////////////////////////////////////////////////////////////
+    "JSDoc for a function": {
+        "prefix": "jsdfunc",
+        "body": [
+            "/**",
+            " * ${0}",
+            " * @param param - Description",
+            " * @return Description",
+            " */"
+        ],
+        "description": "JSDoc for a function"
+    },
+    ////////////////////////////////////////////////////////////////////////////
+    // Jasmine
+    ////////////////////////////////////////////////////////////////////////////
+    "Jasmine describe()": {
+        "prefix": "jasdesc",
+        "body": [
+            "describe(\"${1}\", () => {$0});"
+        ],
+        "description": "Jasmine describe()"
+    },
+    "Jasmine it()": {
+        "prefix": "jasit",
+        "body": [
+            "it(\"${1}\", ${2:async }() => {$0});"
+        ],
+        "description": "Jasmine it()"
+    },
+    "Jasmine expect()": {
+        "prefix": "exp",
+        "body": [
+            "expect(${1:expr}).${2:toEqual}($0);"
+        ],
+        "description": "Jasmine expect()"
+    },
+
+
+    ////////////////////////////////////////////////////////////////////////////
+    // TestCafe
+    ////////////////////////////////////////////////////////////////////////////
+    "TestCafe fixture": {
+        "prefix": "tcf",
+        "body": [
+            "import \"testcafe\";",
+            "",
+            "fixture(\"${2:fixture_title}\")",
+            ".page(${1:\"http://localhost:3000\"})",
+            ".before(async (ctx) => {",
+            "})",
+            ".beforeEach(async (t) => {",
+            "})",
+            ".afterEach(async (t) => {",
+            "})",
+            ".after(async (ctx) => {",
+            "});"
+        ],
+        "description": "TestCafe fixture"
+    },
+    "TestCafe test": {
+        "prefix": "tct",
+        "body": [
+            "test(\"${1:test_title}\", async (t) => {",
+            "})",
+            ".before(async (t) => {",
+            "})",
+            ".after(async (t) => {",
+            "});"
+        ],
+        "description": "TestCafe test"
+    }
 }
