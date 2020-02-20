@@ -134,4 +134,32 @@
         "typescript",
         "html"
     ]
+
+    //
+    // Example of how to customize a color scheme.
+    // References:
+    //   https://github.com/Microsoft/vscode/issues/20767
+    //   https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide
+    //   https://macromates.com/manual/en/language_grammars
+    //
+    // "editor.tokenColorCustomizations": {
+    //     "textMateRules": [
+    //         {
+    //             "scope": [
+    //                 "comment",
+    //                 "comment storage.type",
+    //                 "comment variable",
+    //                 "comment support.variable",
+    //                 "comment support.class",
+    //                 "comment support.type",
+    //                 "comment entity.name.type",
+    //                 "comment entity.name.class",
+    //                 "comment keyword.operator"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#666666"
+    //             }
+    //         }
+    //     ]
+    // }
 }
