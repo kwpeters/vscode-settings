@@ -160,5 +160,24 @@
             "});"
         ],
         "description": "TestCafe test"
-    }
+    },
+
+    ////////////////////////////////////////////////////////////////////////////
+    // TSLint
+    ////////////////////////////////////////////////////////////////////////////
+    "TSLint ignore file": {
+        "prefix": "tslintignorefile",
+        "body": [
+            "// tslint:disable: ${1:max-classes-per-file}${0}"
+        ],
+        "description": "TSLint ignore for rest of file"
+    },
+    "TSLint ignore next line": {
+        "prefix": "tslintignorefile",
+        "body": [
+            "// tslint:disable-next-line: ${1:max-classes-per-file}${0}"
+        ],
+        "description": "TSLint ignore next line"
+    },
+
 }
