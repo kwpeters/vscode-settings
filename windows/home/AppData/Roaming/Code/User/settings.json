@@ -150,7 +150,10 @@
         "latex": [
             "/\\\\begin{minted}[^]*?\\\\end{minted}/gm"
         ]
-    }
+    },
+    "spellright.language": [
+        "en"
+    ]
 
     //
     // Example of how to customize a color scheme.

@@ -34,6 +34,16 @@
 		],
 		"description": "Inserts a function"
 	},
+
+    "iife": {
+        "prefix": "iife",
+        "body": [
+            "(${1:async }function (): ${2:Promise<void>} {",
+            "    ${0}",
+            "})();"
+        ],
+        "description": "Insert an immediately invoked function expression"
+    },
 	"import": {
 		"prefix": "import",
 		"body": [
