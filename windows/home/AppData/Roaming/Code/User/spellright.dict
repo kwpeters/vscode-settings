@@ -5,3 +5,8 @@ cafe
 func
 boolean
 fn
+RegExp
+datestamp
+recurse
+async
+falsy

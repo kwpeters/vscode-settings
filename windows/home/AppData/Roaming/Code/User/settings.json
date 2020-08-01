@@ -142,7 +142,9 @@
         ],
         "typescript": [
             "/import\\s+.*;/g",
-            "/@\\w+/g",
+            "/@param\\s+\\w+\\s+-/g", // Don't check JSDoc @param or their variable name
+            "/@\\w+/g",               // Don't check JSDoc commands
+            "/`\\w+`/g"               // Don't check variable names that are surrounded with back ticks
         ],
         "html": [
             "/<script>[^]*?</script>/gm"
