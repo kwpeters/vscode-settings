@@ -1,7 +1,7 @@
 {
     "files.autoSave": "onFocusChange",
     "window.restoreWindows": "none",
-    "window.zoomLevel": -0.6,
+    "window.zoomLevel": -0.9,
     "editor.detectIndentation": false,
     "editor.formatOnPaste": true,
     "editor.formatOnType": false,
@@ -136,6 +136,7 @@
     ],
     "spellright.spellContext": "body comments",  // Don't check "code" or "strings"
     "spellright.ignoreRegExpsByClass": {
+
         "markdown": [
             "/&amp;/g",
             "/&nbsp;/g"
@@ -144,7 +145,7 @@
             "/import\\s+.*;/g",
             "/@param\\s+\\w+\\s+-/g", // Don't check JSDoc @param or their variable name
             "/@\\w+/g",               // Don't check JSDoc commands
-            "/`\\w+`/g"               // Don't check variable names that are surrounded with back ticks
+            "/\\b_.*?_\\b/g"      // Don't check anything that begins and ends with underscores
         ],
         "html": [
             "/<script>[^]*?</script>/gm"
@@ -155,7 +156,9 @@
     },
     "spellright.language": [
         "en"
-    ]
+    ],
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 
     //
     // Example of how to customize a color scheme.
