@@ -1,7 +1,6 @@
 {
     "files.autoSave": "onFocusChange",
     "window.restoreWindows": "none",
-    "window.zoomLevel": -0.9,
     "editor.detectIndentation": false,
     "editor.formatOnPaste": true,
     "editor.formatOnType": false,
@@ -158,7 +157,8 @@
         "en"
     ],
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.mouseWheelZoom": true
 
     //
     // Example of how to customize a color scheme.
